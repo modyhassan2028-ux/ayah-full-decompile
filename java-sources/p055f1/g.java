@@ -1,0 +1,16 @@
+package p055f1;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class g {
+    public final boolean equals(Object obj) {
+        return obj instanceof g;
+    }
+
+    public final int hashCode() {
+        return 0;
+    }
+
+    public final String toString() {
+        return "Mode(value=0)";
+    }
+}

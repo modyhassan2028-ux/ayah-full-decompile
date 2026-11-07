@@ -1,0 +1,40 @@
+package Y9;
+
+import java.util.Arrays;
+
+/* JADX INFO: renamed from: Y9.z, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes.dex */
+public final class C0669z extends P {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public int[] f10557a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public int f10558b;
+
+    @Override // Y9.P
+    public final Object a() {
+        int[] iArrCopyOf = Arrays.copyOf(this.f10557a, this.f10558b);
+        p251z9.j.d(iArrCopyOf, "copyOf(...)");
+        return iArrCopyOf;
+    }
+
+    @Override // Y9.P
+    public final void b(int i10) {
+        int[] iArr = this.f10557a;
+        if (iArr.length < i10) {
+            int length = iArr.length * 2;
+            if (i10 < length) {
+                i10 = length;
+            }
+            int[] iArrCopyOf = Arrays.copyOf(iArr, i10);
+            p251z9.j.d(iArrCopyOf, "copyOf(...)");
+            this.f10557a = iArrCopyOf;
+        }
+    }
+
+    @Override // Y9.P
+    public final int d() {
+        return this.f10558b;
+    }
+}

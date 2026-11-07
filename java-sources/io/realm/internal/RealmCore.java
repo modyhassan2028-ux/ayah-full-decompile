@@ -1,0 +1,98 @@
+package io.realm.internal;
+
+import android.content.Context;
+import android.support.v4.media.session.r;
+import io.realm.BuildConfig;
+import java.io.File;
+import java.lang.reflect.Field;
+import java.util.Locale;
+import p123m2.c;
+
+/* JADX INFO: loaded from: classes.dex */
+public class RealmCore {
+    private static final String BINARIES_PATH;
+    private static final String FILE_SEP;
+    private static final String JAVA_LIBRARY_PATH = "java.library.path";
+    private static final String PATH_SEP;
+    private static boolean libraryIsLoaded;
+
+    static {
+        String str = File.separator;
+        FILE_SEP = str;
+        String str2 = File.pathSeparator;
+        PATH_SEP = str2;
+        BINARIES_PATH = c.t("lib", str2, "..", str, "lib");
+        libraryIsLoaded = false;
+    }
+
+    public static void addNativeLibraryPath(String str) {
+        try {
+            StringBuilder sb = new StringBuilder();
+            sb.append(System.getProperty(JAVA_LIBRARY_PATH));
+            String str2 = PATH_SEP;
+            sb.append(str2);
+            sb.append(str);
+            sb.append(str2);
+            System.setProperty(JAVA_LIBRARY_PATH, sb.toString());
+        } catch (Exception e10) {
+            throw new RuntimeException("Cannot set the library path!", e10);
+        }
+    }
+
+    private static String loadCorrectLibrary(String... strArr) {
+        for (String str : strArr) {
+            try {
+                System.loadLibrary(str);
+                return str;
+            } catch (Throwable unused) {
+            }
+        }
+        return null;
+    }
+
+    public static synchronized void loadLibrary(Context context) {
+        if (libraryIsLoaded) {
+            return;
+        }
+        r rVar = new r(1);
+        if (context == null) {
+            throw new IllegalArgumentException("Given context is null");
+        }
+        r.I("Beginning load of %s...", "realm-jni");
+        rVar.H(context, BuildConfig.VERSION_NAME);
+        libraryIsLoaded = true;
+    }
+
+    private static String loadLibraryWindows() {
+        try {
+            addNativeLibraryPath(BINARIES_PATH);
+            resetLibraryPath();
+        } catch (Throwable unused) {
+        }
+        String strLoadCorrectLibrary = loadCorrectLibrary("realm_jni32d", "realm_jni64d");
+        if (strLoadCorrectLibrary != null) {
+            System.out.println("!!! Realm debug version loaded. !!!\n");
+        } else {
+            strLoadCorrectLibrary = loadCorrectLibrary("realm_jni32", "realm_jni64");
+            if (strLoadCorrectLibrary == null) {
+                System.err.println("Searched java.library.path=" + System.getProperty(JAVA_LIBRARY_PATH));
+                throw new RuntimeException("Couldn't load the Realm JNI library 'realm_jni32.dll or realm_jni64.dll'. Please include the directory to the library in java.library.path.");
+            }
+        }
+        return strLoadCorrectLibrary;
+    }
+
+    public static boolean osIsWindows() {
+        return System.getProperty("os.name").toLowerCase(Locale.getDefault()).contains("win");
+    }
+
+    private static void resetLibraryPath() {
+        try {
+            Field declaredField = ClassLoader.class.getDeclaredField("sys_paths");
+            declaredField.setAccessible(true);
+            declaredField.set(null, null);
+        } catch (Exception e10) {
+            throw new RuntimeException("Cannot reset the library path!", e10);
+        }
+    }
+}

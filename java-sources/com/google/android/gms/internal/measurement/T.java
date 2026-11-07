@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.measurement;
+
+import android.os.Bundle;
+import android.os.IInterface;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface T extends IInterface {
+    void P(long j, Bundle bundle, String str, String str2);
+
+    int f();
+}

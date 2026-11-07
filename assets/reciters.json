@@ -1,0 +1,373 @@
+{
+ "reciters": [
+  {
+   "key": "abdulhakam",
+   "name": "صابر عبدالحكم",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "abdulsamad-murattal",
+   "name": "عبدالباسط عبدالصمد (مرتل)",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "abdulsamad",
+   "name": "عبدالباسط عبدالصمد",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "afasy",
+   "name": "مشاري العفاسي",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "akhdar",
+   "name": "إبراهيم الأخضر",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "alzain",
+   "name": "الزين محمد أحمد",
+   "variant": 1,
+   "variants": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "key": "ar-mokhtasar-asmari-abdulhakam",
+   "name": "المختصر الصوتي",
+   "variant": 4,
+   "variants": [
+    4
+   ],
+   "ok": true
+  },
+  {
+   "key": "ayyub",
+   "name": "محمد أيوب",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "banna",
+   "name": "محمود علي البنا",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "basfar",
+   "name": "عبدالله بصفر",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "dosari",
+   "name": "ياسر الدوسري",
+   "variant": 1,
+   "variants": [
+    1,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "dukhain",
+   "name": "هيثم الدخين",
+   "variant": 1,
+   "variants": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "key": "en-saheeh-walk-afasy",
+   "name": "معاني القرآن بالإنجليزية (العفاسي)",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "en-saheeh-walk",
+   "name": "معاني القرآن بالإنجليزية",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "ghailan",
+   "name": "عبدالله غيلان",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "ghamdi",
+   "name": "سعد الغامدي",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "hudhaifi",
+   "name": "علي الحذيفي",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "husary-mujawwad",
+   "name": "محمود خليل الحصري (مجوّد)",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "husary-qasr",
+   "name": "محمود خليل الحصري (قصر)",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "husary",
+   "name": "محمود خليل الحصري",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "jaber",
+   "name": "علي جابر",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "juhaim",
+   "name": "خالد الجهيّم",
+   "variant": 4,
+   "variants": [
+    4
+   ],
+   "ok": true
+  },
+  {
+   "key": "juhany",
+   "name": "عبدالله الجهني",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "luhaidan",
+   "name": "محمد اللحيدان",
+   "variant": 1,
+   "variants": [
+    1,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "minshawi",
+   "name": "محمد صديق المنشاوي",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "muaiqly-haramain",
+   "name": "ماهر المعيقلي (الحرمين)",
+   "variant": 1,
+   "variants": [
+    1,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "muaiqly",
+   "name": "ماهر المعيقلي",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "muhanna",
+   "name": "خالد المهنا",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "naeem",
+   "name": "عمر النعيم",
+   "variant": 1,
+   "variants": [
+    1,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "nufais",
+   "name": "أحمد النفيس",
+   "variant": 1,
+   "variants": [
+    1,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "qatami",
+   "name": "ناصر القطامي",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "salama-hadr",
+   "name": "ياسر سلامة",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "salmi",
+   "name": "منصور السالمي",
+   "variant": 1,
+   "variants": [
+    1,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "shahin",
+   "name": "أحمد خليل شاهين",
+   "variant": 1,
+   "variants": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "key": "shatri",
+   "name": "أبو بكر الشاطري",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "shuraim",
+   "name": "سعود الشريم",
+   "variant": 1,
+   "variants": [
+    1,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "sudais",
+   "name": "عبدالرحمن السديس",
+   "variant": 2,
+   "variants": [
+    2,
+    3
+   ],
+   "ok": true
+  },
+  {
+   "key": "sufi",
+   "name": "عبدالرشيد صوفي",
+   "variant": 2,
+   "variants": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "tunaiji",
+   "name": "خليفة الطنيجي",
+   "variant": 1,
+   "variants": [
+    1,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "key": "zahrani",
+   "name": "عبدالعزيز الزهراني",
+   "variant": 3,
+   "variants": [
+    3
+   ],
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.measurement;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class m4 implements b8.d {
+
+    /* JADX INFO: renamed from: s, reason: collision with root package name */
+    public static final m4 f14365s = new m4();
+
+    /* JADX INFO: renamed from: r, reason: collision with root package name */
+    public final b8.g f14366r = new b8.g(new o4());
+
+    @Override // b8.d
+    public final Object get() {
+        return (n4) this.f14366r.f13335r;
+    }
+}
